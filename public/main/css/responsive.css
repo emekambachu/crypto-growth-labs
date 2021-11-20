@@ -1,0 +1,999 @@
+.testimonial-wrap-2 .thumb img {
+    border-radius: 50%;
+}
+.widget-author .author img {
+	border-radius: 50%;
+}
+.blog-details-wrap .blog-comment .media a img {
+	border-radius: 50%;
+}
+/*--------------------------------------------------
+    ## All responsive style
+---------------------------------------------------*/
+@media all and (min-width: 1600px) {
+	.banner-bg-image {
+		background-position: -380px -300px;
+		background-size: 140%;
+		padding: 181px 0 160px;
+	}
+	.banner-slider .owl-dots {
+		left: -31%;
+	}
+	.bg-image-1 {
+	    background-size: 125% 63%;
+	}
+	.cta-area {
+		background-position: inherit;
+	}
+	.service-area {
+		background-size: auto;
+	}
+	.single-partner-wrap .thumb img {
+		margin: 0;
+		width: 100%;
+	}
+}
+@media (max-width: 1599px){
+	.banner-inner.banner-inner-2 {
+	    margin: 260px 0 120px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 1170px;
+	}
+}
+@media all and (max-width: 1199px) {
+	.navbar-area .nav-container .logo {
+		width: 250px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li a {
+		font-size: 14px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
+		margin-left: 18px;
+	}
+	.nav-right-part ul li:first-child a {
+		padding: 0 25px;
+		font-size: 14px;
+	}
+	.nav-right-part-desktop {
+	    margin-left: 15px;
+	}
+	h1 {
+	    font-size: 55px;
+	}
+	h5 {
+	    font-size: 22px;
+	}
+	p {
+		font-size: 14px;
+	}
+	.banner-bg-image {
+		background-size: 218%;
+	}
+	.banner-area {
+		padding: 350px 0 224px;
+	}
+	.banner-slider .owl-dots {
+		position: absolute;
+	    display: inline-flex;
+	    bottom: -30px;
+	    top: auto;
+	    left: 50%;
+	    margin-left: -30px;
+	}
+	.banner-slider .owl-dots .owl-dot {
+		margin-bottom: 0;
+		margin-right: 11px;
+	}
+	.banner-inner {
+	    margin: 0;
+	}
+	.section-title h2 {
+		font-size: 40px;
+	}
+	.pd-bottom-196 {
+	    padding-bottom: 96px;
+	}
+	.single-intro-wrap {
+		padding: 50px 30px 32px;
+	}
+	.single-intro-wrap h5 {
+		font-size: 20px;
+	}
+	.single-history-wrap .thumb {
+		height: 100px;
+		width: 100px;
+		line-height: 96px;
+	}
+	.invest-plan-table tr td, .invest-plan-table tr th {
+		font-size: 24px;
+	}
+	.invest-plan-table tr td .daily-percentage, .invest-plan-table tr th .daily-percentage {
+		height: 120px;
+	    width: 120px;
+	    line-height: 120px;
+	    margin-left: -4px;
+	    font-size: 32px;
+	}
+	.invest-plan-table .btn-area {
+		height: 120px;
+	    line-height: 115px;
+	    margin-right: -8px;
+	}
+	.invest-plan-table .invest-plan-wrap .media-body span {
+	    font-size: 15px;
+	}
+	.invest-plan-table .invest-plan-wrap {
+		padding: 0 21px 0 15px;
+		height: 120px;
+	}
+	.invest-plan-table .media .thumb {
+		width: 50px;
+	}
+	.invest-plan-table .invest-term-wrap .media-body .term-day {
+		margin-bottom: -5px;
+	}
+	.analysis-pill .nav-pills .nav-item {
+	    width: 29.8%;
+	}
+	.single-analysis-wrap .wrap-details {
+		padding: 18px 30px 12px;
+	}
+	.single-analysis-wrap .wrap-price {
+		padding: 15px 0;
+	}
+	.testimonial-wrap .testimonial-wrap-details h6 span {
+		display: block;
+		margin-top: 8px;
+	}
+	.subscribe-area .media h5 {
+		font-size: 18px;
+	}
+	.subscribe-area {
+		padding-right: 45px;
+	}
+	.subscribe-area .media .thumb {
+		margin-right: 20px;
+	}
+	.footer-widget .widget-title {
+	    font-size: 20px;
+	}
+	.widget_category .social-area {
+		padding: 0 23px;
+	}
+	.topbar-area.topbar-area-2 {
+		background-position: 56%;
+	}
+	.message-wrap:after {
+		right: -43px;
+	}
+	.navbar-area-2 .nav-right-part ul li:first-child a {
+		padding: 0;
+	}
+	.banner-area.banner-slider-2 {
+	    padding: 0;
+	}
+	.cta-area {
+		background-position: 46%;
+	}
+	.service-area {
+	    background-size: 181%;
+	}
+	.single-industries-wrap .thumb {
+	    margin-right: 10px;
+	}
+	.single-industries-wrap .media {
+	    padding: 30px 26px 26px 19px;
+	}
+	.about-nav-pills .nav-pills .nav-item .nav-link {
+		padding: 0 9px 20px;
+	}
+	.message-wrap h6.title {
+	    font-size: 16px;
+	}
+	.message-wrap .message-form-wrap {
+	    padding: 25px 28px 30px;
+	}
+	.message-wrap p {
+	    font-size: 13px;
+	    margin-bottom: 22px;
+	}
+	.about-contact-wrap h6 {
+		font-size: 16px;
+	}
+	.about-contact-wrap {
+		padding: 23px 16px 22px;
+	}
+	.single-history-wrap-2 .thumb {
+	    height: auto;
+	    width: auto;
+	}
+	.single-history-wrap-2 .wrap-details h6 {
+	    font-size: 16px;
+	}
+	.single-history-wrap-2 .wrap-details h4 {
+		font-size: 26px;
+	}
+	.footer-content-area {
+		margin-top: 0;
+	}
+	.footer-area-2 {
+		padding-bottom: 80px;
+	}
+	.footer-widget {
+	    margin-bottom: 60px;
+	}
+	.single-client-info .client-count {
+	    font-size: 55px;
+	}
+	.widget-search .single-search-inner button {
+		padding: 0 15px;
+	}
+	.widget-post .single-post-wrap .media-body h6 {
+	    font-size: 14px;
+	}
+	.widget-post .single-post-wrap .media-body .date {
+	    font-size: 12px;
+	}
+	.widget-post .single-post-wrap {
+		display: block;
+		padding-bottom: 14px;
+	}
+	.widget-post .single-post-wrap .media-body {
+		margin: 15px 0 0 0;
+	}
+	.widget-category ul li a {
+		font-size: 14px;
+	}
+	.single-service-wrap .single-service-details p {
+		font-size: 13px;
+	}
+	.widget-contact .widget-contact-wrap img {
+	    margin-right: 13px;
+	}
+}
+@media all and (max-width: 991px) {
+	.pd-top--0 {
+		padding-top: 0;
+	}
+	.back-to-top {
+		right: 39px;
+	}
+	.invest-plan-table {
+		margin: 10px !important;
+	}
+	.invest-plan-table .btn-area {
+		margin-right: 0;
+		height: 80px;
+		line-height: 74px;
+		padding: 0 25px;
+	}
+	.invest-plan-table tr td .daily-percentage, .invest-plan-table tr th .daily-percentage {
+		margin-left: 0;
+	}
+	.invest-plan-table .btn-area .btn {
+	    padding: 0 20px;
+	    height: 40px;
+	    line-height: 40px;
+	}
+	.nav-right-part {
+	    margin-left: auto;
+	}
+	.responsive-mobile-menu {
+		top: 30px;
+    	right: 25px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		position: absolute;
+	    left: 21px;
+	    width: 94.5%;
+	    top: 86px;
+	    background: linear-gradient(to right, #DD4372 35%, #F3D038 100%);
+	    border-radius: 10px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav {
+		margin-top: 0;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li:first-child,
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
+		margin: 0 18px;
+	}
+	.banner-area {
+	    padding: 300px 0 224px;
+	}
+	.banner-inner {
+		text-align: center;
+	}
+	.banner-bg-image {
+		background-position: center -115px;
+		background-size: 254%;
+	}
+	.banner-slider .owl-dots {
+		bottom: -40px;
+	}
+	.profit-wrap-area {
+		padding: 46px 50px 76px;
+	}
+	.btn {
+		padding: 0 25px;
+		font-size: 14px;
+	}
+	.bg-image-1 {
+		background-size: 200% 50%;
+	}
+	.single-history-wrap .wrap-details h6 {
+		font-size: 18px;
+	}
+	.invest-plan-table tr td, .invest-plan-table tr th {
+		padding: 0 0px 0 12px;
+		font-size: 20px;
+	}
+	.invest-plan-table .invest-plan-wrap {
+		width: 251px;
+		height: 80px;
+	}
+	.invest-plan-table tr td .daily-percentage, .invest-plan-table tr th .daily-percentage {
+		width: 80px;
+		height: 80px;
+		font-size: 24px;
+		line-height: 80px;
+	}
+	.invest-plan-table .invest-term-wrap .media-body span {
+		font-size: 18px;
+	}
+	.invest-plan-table .invest-term-wrap .media-body .term-day {
+		font-size: 22px;
+	}
+	.analysis-area {
+		background-size: 200% 80%;
+	}
+	.analysis-pill {
+		padding: 20px 10px;
+	}
+	.analysis-pill .nav-pills .nav-item .nav-link {
+		font-size: 14px;
+	}
+	.analysis-pill .nav-pills .nav-item {
+		margin: 0 10px;
+		width: 30.2%;
+	}
+	.payment-wrap {
+		padding-top: 56px;
+		padding-bottom: 46px;
+	}
+	.subscribe-area {
+		margin-top: 50px;
+	}
+	.subscribe-area .media .thumb img {
+		width: 100px;
+	}
+	.subscribe-area .media h5 {
+	    font-size: 14px;
+	}
+	.section-title {
+	    margin-bottom: 50px;
+	}
+	.topbar-area.topbar-area-2 .topbar-content span {
+	    font-size: 12px;
+	}
+	.navbar-area-2 .toggle-btn .icon-right:before,
+	.navbar-area-2 .toggle-btn .icon-right:after,
+	.navbar-area-2 .toggle-btn .icon-right,
+	.navbar-area-2 .toggle-btn .icon-left:before, 
+	.navbar-area-2 .toggle-btn .icon-left:after, 
+	.navbar-area-2 .toggle-btn .icon-left{
+		background-color: #DD1C63;
+	}
+	.navbar-area-2 .toggle-btn.open .icon-right,
+	.navbar-area-2 .toggle-btn.open .icon-left {
+		background: transparent;
+
+	}
+	.navbar-area-2 .nav-right-part {
+	    margin-right: 40px;
+	}
+	.navbar-area-2 .responsive-mobile-menu {
+	    top: 32px;
+	    right: 2px;
+	}
+	.navbar-area-2 .nav-container .navbar-collapse {
+		background: #fff;
+	}
+	.cta-area {
+		text-align: center;
+		background-position: 55%;
+	}
+	.cta-area .btn-blue {
+		background: #DD1C63;
+		margin-top: 30px;
+	}
+	.section-title.section-title-2 {
+	    margin-bottom: 80px;
+	}
+	.about-nav-pills {
+		margin-bottom: 30px;
+	}
+	.client-area .more-client-info {
+		padding: 48px 35px 50px;
+	}
+	.helping-area .help-wrap h3 {
+	    font-size: 32px;
+	}
+	.testimonial-area-2 .section-title-2 {
+		margin-bottom: 20px;
+	}
+	.message-wrap:after {
+		display: none;
+	}
+	.about-area .section-title.section-title-2 {
+		text-align: center;
+	}
+	.about-area .section-title.section-title-2:after {
+		left: 50%;
+		margin-left: -26px;
+	}
+	.about-area-2 .about-video-wrap .thumb img {
+		width: 100%;
+	}
+	.about-area-2 .about-video-wrap .thumb {
+		margin-bottom: 30px;
+	}
+	.blog-details-area .sidebar-area {
+		margin-top: 50px;
+	}
+	.service-chart .thumb {
+		text-align: center;
+	}
+	.service-details-area .sidebar-area {
+		margin-top: 50px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
+		color: #ffffff;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.navbar-area.navbar-area-2 .navbar-inner .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li:hover,
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li:hover {
+		background: transparent;
+	}
+	.navbar-area-2 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li:hover a:before,
+	.navbar-area-2 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li:hover a,
+	.navbar-area-2 .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
+	    color: #050a30;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.topbar-area .topbar-content span {
+		font-size: 14px;
+	}	
+	h1 {
+	    font-size: 46px;
+	}
+	.section-title h2 {
+	    font-size: 30px;
+	}
+	.profit-wrap-area {
+	    padding: 40px 30px 36px;
+	}
+	.profit-wrap-area .invest-wrap {
+		margin-top: 20px;
+	}
+	.profit-wrap-area h6 {
+		font-size: 16px;
+	}
+	.invest-range {
+		margin-top: 30px;
+		padding: 20px 20px 25px 24px;
+	}
+	.ctr-area .ctr-wrap p,
+	.section-title p {
+		font-size: 14px;
+	}
+	.analysis-area {
+	    background-size: 230% 65%;
+	}
+	.analysis-pill {
+	    padding: 25px 20px 0 20px;
+	    border-radius: 46px;
+	}
+	.analysis-pill .nav-pills {
+		justify-content: center;
+	}
+	.analysis-pill .nav-pills .nav-item {
+		width: 45.74%;
+		margin-bottom: 25px;
+	}
+	.ctr-area .ctr-wrap h3 {
+	    font-size: 34px;
+	}
+	.payment-wrap ul li {
+		margin-right: 20px;
+	}
+	.payment-wrap ul li a {
+		font-size: 18px;
+	}
+	.payment-wrap ul li a img {
+		width: 80px;
+	}
+	.subscribe-area {
+		padding: 30px;
+		border-radius: 46px;
+	}
+	.subscribe-area .media {
+		display: block;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.subscribe-area .media .thumb {
+		display: inline-block;
+		margin: 0 0 20px 0;
+	}
+	.bg-image-1 {
+	    background-size: 205% 38%;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		width: 92.7%;
+	}
+	.banner-inner.banner-inner-2 h1 {
+	    font-size: 48px;
+	}
+	.single-service-wrap .single-service-details h5 {
+		font-size: 18px;
+	}
+	.single-service-wrap .single-service-details {
+	    padding: 26px 25px 20px;
+	}
+	.details-btn {
+		padding: 11px 0 10px 29px;
+	}
+	.details-btn span {
+		width: 60px;
+		height: 48px;
+	    line-height: 48px;
+	}
+	.single-industries-wrap .media {
+		display: block;
+	}
+	.single-industries-wrap .thumb {
+		margin-bottom: 15px;
+	}
+	.single-industries-wrap h6 {
+		font-size: 17px;
+	}
+	.single-industries-wrap .single-industries-details a i {
+		position: absolute;
+	    top: 30px;
+	    right: 30px;
+	}
+	.about-nav-pills .nav-pills .nav-item .nav-link {
+		font-size: 12px;
+		padding: 0 0 20px;
+		height: 100%;
+	}
+	.team-single-wrap .team-wrap-details h6 {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.team-single-wrap .team-wrap-details p {
+		margin-bottom: 10px;
+	}
+	.team-single-wrap .team-wrap-details {
+		padding: 0 26px 10px;
+	}
+	.client-area .more-client-info {
+		padding: 48px 35px 20px;
+	}
+	.single-client-info.media {
+		display: flex;
+		margin-bottom: 30px;
+	}
+	.footer-bottom-2 {
+		text-align: center; 
+	}
+	.footer-bottom-2 p {
+		margin-bottom: 15px;
+	}
+	.section-title.section-title-2 h2 {
+		font-size: 36px;
+	}
+	.single-investor-wrap:hover .thumb {
+		box-shadow: none;
+	}
+	.single-investor-wrap .thumb:before {
+		background-size: 100%;
+	    height: 100%;
+	    width: 100%;
+	    top: 0px;
+	    left: 0;
+	}
+	.single-investor-wrap .thumb img {
+		height: 175px;
+    	width: 175px;
+    	margin: 25px;
+	}
+	.single-investor-wrap .thumb:after {
+		height: 194px;
+    	width: 194px;
+    	top: 15px;
+    	left: 15px;
+	}
+	.single-investor-wrap:hover .thumb span {
+		left: 42px;
+	}
+	.testimonial-wrap:hover .thumb span,
+	.testimonial-wrap .thumb span {
+		right: 13px;
+		left: auto;
+	}
+	.single-investor-wrap .investor-wrap-details {
+	    margin-top: 30px;
+	}
+	.single-blog-wrap .thumb img {
+		width: 100%;
+	}
+	.about-nav-pills .nav-pills .nav-item .nav-link span {
+	    width: 80px;
+	    height: 80px;
+	    display: block;
+	    margin: -40px auto 27px;
+	    line-height: 80px;
+	}
+	.blog-details-wrap .blockquote p {
+	    font-size: 16px;
+	}
+
+}
+@media all and (max-width: 576px) {
+	.banner-bg-image {
+		background-size: 200% 115%;
+	}	
+	.banner-slider-2 .swiper-pagination {
+		display: inline-flex;
+		bottom: 55px;
+	    right: 50%;
+	    margin-right: -15px;
+	}
+	.banner-slider-2 .swiper-pagination .swiper-pagination-bullet {
+		margin-left: 10px;
+	}
+	.banner-inner.banner-inner-2 {
+	    margin: 210px 0 130px;
+	}
+	.single-service-wrap .single-service-details {
+	    padding: 26px 25px 15px;
+	}
+	.search-popup .search-form {
+	    min-width: 400px;
+	}
+	.back-to-top {
+	    right: 33px;
+	}
+	.about-area-2 .about-nav-pills .nav-pills .nav-item .nav-link {
+	    padding: 0 14px 20px;
+	}
+}
+@media all and (max-width: 575px) {
+	.topbar-area .lang-select {
+		display: none;
+	}	
+	.navbar-area {
+		top: 39px;
+	}
+	.responsive-mobile-menu {
+	    top: 26px;
+	}
+	.nav-right-part {
+	    margin-right: 38px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		top: 68px;
+		width: 90.3%;
+	}
+	h1 {
+	    font-size: 35px;
+	}
+	.banner-area {
+	    padding: 190px 0 224px;
+	}
+	.profit-wrap-area .nice-select {
+		margin-bottom: 20px;
+	}
+	.profit-wrap-area .invest-wrap {
+		margin-top: 0;
+	}
+	.profit-wrap-area .invest-wrap .nice-select {
+		margin-bottom: 0;
+	}
+	.analysis-pill .nav-pills .nav-item {
+	    width: 100%;
+	}
+	.payment-wrap ul li a img {
+	    width: 60px;
+	}
+	.analysis-area {
+	    background-size: 242% 34%;
+	}
+	.bg-image-1 {
+	    background-size: 248% 31%;
+	}
+	.navbar-area.navbar-area-2 {
+		top: 48px;
+	}
+	.navbar-area-2 .nav-right-part {
+		margin-bottom: -5px;
+	}
+	.navbar-area-2 .nav-container {
+		padding: 0 15px;
+	}
+	.navbar-area-2 .responsive-mobile-menu {
+	    top: 20px;
+	}
+	.navbar-area-2 .nav-container .navbar-collapse {
+		margin-top: 0;
+	}
+	.banner-inner.banner-inner-2 h1 {
+	    font-size: 38px;
+	}
+	.cta-area h4 {
+	    font-size: 28px;
+	}
+	.single-service-wrap .thumb img {
+		width: 100%;
+	}
+	.service-area {
+		background: transparent;
+	}
+	.about-nav-pills .nav-pills .nav-item .nav-link span {
+		margin-top: 20px;
+		width: 70px;
+	    height: 70px;
+	    line-height: 70px;
+	}
+	.about-nav-pills .nav-pills .nav-item .nav-link span img {
+		width: 55px;
+	}
+	.about-nav-pills .tab-content {
+	    padding: 27px 30px 30px;
+	}
+	.single-history-wrap-2 .thumb {
+		margin: 0;
+	}
+	.single-history-wrap-2 {
+		display: block;
+    	text-align: center;
+	}
+	.single-history-wrap-2 h4:after {
+		margin-left: -22px;
+		left: 50%;
+	}
+	.gallery-single-wrap .thumb img {
+		width: 100%;
+	}
+	.gallery-single-wrap .thumb a .full-screen img {
+		width: auto;
+	}
+	.helping-area .help-wrap .single-subscribe-wrap input {
+		height: 50px;
+	}
+	.helping-area .help-wrap .single-subscribe-wrap .btn {
+		padding: 0 40px;
+		height: 50px;
+    	line-height: 50px;
+    	font-size: 16px;
+	}
+	.search-popup .search-form {
+	    min-width: 360px;
+	}
+	.footer-content-area {
+		padding: 50px 0 42px;
+	}
+	.about-area-2 .about-nav-pills .tab-content {
+		padding-bottom: 0px;
+	}
+	.blog-details-wrap .author-area {
+		padding: 27px 30px 28px;
+	}
+	.blog-details-wrap .author-area .media .media-body {
+	    margin-left: 20px;
+	}
+	.blog-details-inner .title {
+	    font-size: 27px;
+	}
+	.blog-details-inner .thumb .meta {
+		position: initial;
+		padding-left: 0;
+	}
+	.blog-details-inner .thumb .meta span {
+		margin-right: 7px;
+	}
+	.blog-details-inner {
+	    margin-bottom: 00px;
+	}
+	.back-to-top {
+	    right: 14px;
+	}
+	.post-check .single-post-wrap {
+		margin-bottom: 25px;
+		text-align: left !important
+	}
+	.single-blog-wrap .blog-wrap-details {
+	    padding: 25px 20px 17px 20px;
+	}
+}
+@media (min-width: 506px) and (max-width: 767px) {
+	.about-nav-pills .nav-pills .nav-item .nav-link {
+	    font-size: 11px;
+	}
+}
+@media all and (max-width: 500px){
+	.about-nav-pills .nav-pills .nav-item {
+		width: 100%;
+	}
+}
+@media all and (max-width: 375px) {
+	.payment-wrap {
+		padding: 56px 15px 16px;
+	}	
+	.payment-wrap ul li {
+		margin: 0 10px 30px;
+	}
+	.topbar-area {
+		display: none;
+	}
+	.navbar-area {
+	    top: 5px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		width: 88.5%;
+	}
+	h1 {
+	    font-size: 28px;
+	}
+	h5 {
+	    font-size: 18px;
+	}
+	.section-title h2 {
+	    font-size: 22px;
+	}
+	.ctr-area .ctr-wrap h3 {
+	    font-size: 22px;
+	}
+	.nav-right-part .btn {
+		display: none;
+	}
+	.navbar-area .nav-container .logo a img {
+	    width: 160px;
+	}
+	.responsive-mobile-menu {
+	    top: 29px;
+	}
+	.navbar-area.navbar-area-2 {
+	    top: 0;
+	}
+	.navbar-area-2 .nav-right-part {
+	    margin-bottom: 2px;
+	}
+	.single-blog-wrap .blog-wrap-details .category:after {
+		display: none;
+	}
+	.helping-area .help-wrap h3 {
+	    font-size: 26px;
+	}
+	.helping-area .help-wrap p {
+		font-size: 14px;
+	}
+	.single-client-info.media .media-body h5 {
+	    font-size: 18px;
+	}
+	.single-client-info .client-count {
+	    font-size: 44px;
+	}
+	.single-client-info .client-count .counter {
+	    margin-right: -8px;
+	}
+	.section-title.section-title-2 h2 {
+	    font-size: 28px;
+	}
+	.banner-inner.banner-inner-2 h1 {
+	    font-size: 29px;
+	}
+	.cta-area h4 {
+	    font-size: 21px;
+	}
+	.navbar-area-2 .responsive-mobile-menu {
+	    top: 22px;
+	}
+	.search-popup .search-form {
+	    min-width: 340px;
+	}
+	.breadcrumb-area .page-list li {
+	    font-size: 12px;
+	}
+	.blog-details-wrap .blog-comment .media {
+		display: block;
+	}
+	.blog-details-wrap .blog-comment .media .media-body {
+		margin: 15px 0 0 0;
+	}
+	.blog-details-wrap .author-area .media {
+		display: block;
+	}
+	.blog-details-wrap .author-area .media .media-body {
+		margin: 20px 0 0 0; 
+	}
+	.service-details-area h5 {
+	    font-size: 20px;
+	}
+}
+@media all and (max-width: 320px) {
+	.gallery-isotope-btn .button {
+	    font-size: 14px;
+	}
+	.single-client-info.media,
+	.single-client-info {
+		display: inline-block;
+		text-align: center;
+	}
+	.single-client-info .client-count {
+		margin-bottom: 0;
+	}
+	.single-client-info.media .thumb {
+		margin: 0 auto;
+	}
+	.single-client-info.media .media-body {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.helping-area .help-wrap .single-subscribe-wrap input {
+		padding: 0 153px 0 28px;
+	}
+	.search-popup .search-form {
+	    min-width: 300px;
+	}
+	.blog-details-inner .title {
+	    font-size: 20px;
+	}
+	.blog-details-wrap .blockquote p {
+	    font-size: 18px; 
+	}
+	.profit-area .btn-base {
+		margin-top: 10px;
+	}
+	.single-subscribe-wrap .btn {
+		position: inherit;
+	    margin-top: 10px;
+	    width: 100%;
+	}
+	.single-subscribe-wrap input {
+		padding: 0 25px;
+	}
+	.widget-category ul li a span i {
+		margin-left: 4px;
+	}
+	.single-investor-wrap .thumb:before {
+		background-size: 100%;
+	    height: 100%;
+	    width: 100%;
+	    top: 0px;
+	    left: 0;
+	}
+	.single-investor-wrap .thumb img {
+		height: 150px;
+    	width: 150px;
+    	margin: 25px;
+	}
+	.single-investor-wrap .thumb:after {
+		height: 170px;
+    	width: 170px;
+    	top: 15px;
+    	left: 15px;
+	}
+	.blog-details-area .sidebar-area .widget {
+	    padding: 27px 20px 30px;
+	    border-radius: 5px;
+	}
+}
