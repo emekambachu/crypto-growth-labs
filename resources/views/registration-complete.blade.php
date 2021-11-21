@@ -24,17 +24,6 @@
                     <div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
                         <div class="gdlr-core-pbf-background-wrap"></div>
                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js" style="max-width: 760px;">
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 60px;">
-                                    <div class="gdlr-core-title-item-title-wrap">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
-                                            style="font-size: 39px; font-weight: 600; letter-spacing: 0px; text-transform: none;">
-                                            Registration Complete <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
-                                        </h3>
-                                    </div>
-
-                                </div>
-                            </div>
 
                             <div class="gdlr-core-pbf-element">
                                 <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb">
@@ -49,6 +38,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

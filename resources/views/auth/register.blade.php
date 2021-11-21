@@ -71,7 +71,7 @@
 
                                             <input class="input @error('mobile') is-invalid @enderror"
                                                    type="tel" name="mobile" value="{{ old('mobile') }}"
-                                                   placeholder="Mobile Number">
+                                                   placeholder="Mobile Number (Optional)">
                                             @error('mobile')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -110,60 +110,56 @@
                                                    autocomplete="new-password" placeholder="Confirm Password" required>
 
                                             <label>Primary crypto wallet</label>
-                                            <input class="input @error('wallet_address') is-invalid @enderror"
-                                                   type="text" name="wallet_address[0][name]"
-                                                   value="{{ old('wallet_address') }}"
+                                            <input class="input @error('wallet_address[0][address]') is-invalid @enderror"
+                                                   type="text" name="wallet_address[0][address]"
+                                                   value="{{ old('wallet_address[0][address]') }}"
                                                    placeholder="Primary Crypto Wallet Name">
-                                            @error('wallet_address')
+                                            @error('wallet_address[0][address]')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
 
-                                            <input class="input @error('wallet_address') is-invalid @enderror"
+                                            <input class="input @error('wallet_address[0][address]') is-invalid @enderror"
                                                    type="text" name="wallet_address[0][address]"
-                                                   value="{{ old('wallet_address') }}"
+                                                   value="{{ old('wallet_address[0][address]') }}"
                                                    placeholder="Primary Crypto Wallet Address">
-                                            @error('wallet_address')
+                                            @error('wallet_address[0][address]')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
 
                                             <label>Secondary crypto wallet</label>
-                                            <input class="input @error('wallet_address') is-invalid @enderror"
+                                            <input class="input @error('wallet_address[1][name]') is-invalid @enderror"
                                                    type="text" name="wallet_address[1][name]"
-                                                   value="{{ old('wallet_address') }}"
+                                                   value="{{ old('wallet_address[1][name]') }}"
                                                    placeholder="Secondary Crypto Wallet Name">
-                                            @error('wallet_address')
+                                            @error('wallet_address[1][name]')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
 
-                                            <input class="input @error('wallet_address') is-invalid @enderror"
+                                            <input class="input @error('wallet_address[1][address]') is-invalid @enderror"
                                                    type="text" name="wallet_address[1][address]"
-                                                   value="{{ old('wallet_address') }}"
+                                                   value="{{ old('wallet_address[1][address]') }}"
                                                    placeholder="Secondary Crypto Wallet Address">
-                                            @error('wallet_address')
+                                            @error('wallet_address[1][address]')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
 
                                             <label>Country</label>
-                                            <input class="input @error('country') is-invalid @enderror" type="text"
-                                                   name="country" value="{{ old('country') }}"
-                                                   placeholder="Your Country *" required>
+                                            <select class="input" id="country" name="country" required></select>
                                             @error('country')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
 
-                                            <input class="input @error('state') is-invalid @enderror" type="text"
-                                                   name="state" value="{{ old('state') }}"
-                                                   placeholder="Your State *">
+                                            <select class="input" id="state" name="state" required></select>
                                             @error('state')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -177,7 +173,7 @@
 
                                             <label>Address</label>
                                             <input class="input @error('address') is-invalid @enderror"
-                                                   type="text" name="address" placeholder="Address"
+                                                   type="text" name="address" placeholder="Address (Optional)"
                                                    value="{{ old('address') }}">
                                             @error('address')
                                             <span class="invalid-feedback" role="alert">
@@ -188,7 +184,7 @@
                                             <label>Referer (Include your referer address)</label>
                                             <input class="input @error('referer') is-invalid @enderror" type="text"
                                                    name="referer" value="{{ old('referer') }}"
-                                                   placeholder="Your referer *">
+                                                   placeholder="Your referer (Optional)">
                                             @error('referer')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

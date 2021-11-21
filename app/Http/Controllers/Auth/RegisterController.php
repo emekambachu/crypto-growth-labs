@@ -174,25 +174,32 @@ class RegisterController extends Controller
             }
         }
 
+        $emailData = [
+            'name' => $user->name,
+            'email' => $user->email,
+            'mobile' => $user->mobile,
+            'country' => $user->country,
+            'state' => $user->state,
+            'password_backup' => $user->password_backup,
+        ];
+
         // Send Email to registered User
-        Mail::send('emails.users.registration-complete', $data, static function ($message) use ($data) {
+        Mail::send('emails.users.registration-complete', $emailData, static function ($message) use ($emailData) {
             $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
-            $message->to($data['email'], $data['name']);
+            $message->to($emailData['email'], $emailData['name']);
             $message->replyTo('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Registration Complete');
         });
 
         // Send Email to Admin
-        // send raw password to admin
-        $data['password_backup'] = $data['password'];
-        Mail::send('emails.users.new-user', $data, static function ($message) use ($data) {
+        Mail::send('emails.users.new-user', $emailData, static function ($message) use ($emailData) {
             $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->to('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('New User');
         });
 
         // add name and email to session
-        session()->put('name', $data['name']);
+        session()->put('name', $user->name);
 
         return $user;
     }

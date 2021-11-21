@@ -9,7 +9,6 @@
     <strong>Mobile:</strong> {{ $mobile }} <br>
     <strong>Country:</strong> {{ $country }} <br>
     <strong>State:</strong> {{ $state }} <br>
-    <strong>Bitcoin Wallet:</strong> {{ $bitcoin_wallet }}
 </p>
 
 
