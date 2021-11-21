@@ -4,6 +4,10 @@
     Sign up
 @endsection
 
+@section('top-assets')
+    <script src="{{ asset('js/countries.js') }}" type="text/javascript"></script>
+@endsection
+
 @section('content')
     <div class="corzo-page-title-wrap corzo-style-custom corzo-left-align">
         <div class="corzo-header-transparent-substitute"></div>

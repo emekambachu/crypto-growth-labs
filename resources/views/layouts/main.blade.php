@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{{ asset('main/css/corzo-style-custom.css') }}" type="text/css" media="all" />
     <link rel="stylesheet" href="{{ asset('main/js/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css') }}" type="text/css" media="all" />
 
+    @yield('top-assets')
 </head>
 
 <body class="home page-template-default page page-id-12613 theme-corzo gdlr-core-body woocommerce-no-js corzo-body corzo-body-front corzo-full corzo-with-sticky-navigation corzo-blockquote-style-3 gdlr-core-link-to-lightbox"
