@@ -14,4 +14,4 @@
 </ul>
 
 <p align="center">Need more information?<br>
-    Please contact <strong>support@wglobalinvestment.com</strong>.</p>
+    Please contact <strong>support@cryptogrowthlabs.com</strong>.</p>

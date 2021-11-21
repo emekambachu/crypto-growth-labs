@@ -34,9 +34,9 @@ class HomeController extends Controller
 
         // Send Email user
         Mail::send('emails.users.recover-password', $data, static function ($message) use ($data) {
-            $message->from('support@wglobalinvestment.com', 'Bulls Market Traders');
+            $message->from('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->to($data['email'], $data['name']);
-            $message->replyTo('support@wglobalinvestment.com', 'Bulls Market Traders');
+            $message->replyTo('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Your Password');
         });
 
@@ -63,9 +63,9 @@ class HomeController extends Controller
 
         // Send Email Company
         Mail::send('emails.contact-form', $data, static function ($message) use ($data) {
-            $message->from('info@bit-farms.ltd', 'Bulls Market Traders');
-            $message->to('support@wglobalinvestment.com', 'Bulls Market Traders');
-            $message->replyTo('noreply@bit-farms.ltd', 'Bulls Market Traders');
+            $message->from('info@bit-farms.ltd', 'Crypto Growth Labs');
+            $message->to('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->replyTo('noreply@bit-farms.ltd', 'Crypto Growth Labs');
             $message->subject('New Message From'. $data['name']);
         });
 

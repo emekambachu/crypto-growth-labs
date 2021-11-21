@@ -17,6 +17,7 @@ class CreateUserReferralsTable extends Migration
             $table->id();
             $table->bigInteger('user_id')->nullable()->unsigned();
             $table->bigInteger('referee_id');
+            $table->bigInteger('referee_number');
             $table->timestamps();
         });
     }

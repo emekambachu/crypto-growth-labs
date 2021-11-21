@@ -15,7 +15,11 @@ class CreateWalletsTable extends Migration
     {
         Schema::create('wallets', static function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id')->unsigned()->nullable();
             $table->integer('amount')->default(0);
+            $table->integer('profit')->default(0);
+            $table->integer('commission')->default(0);
+            $table->integer('bonus')->default(0);
             $table->timestamps();
         });
     }

@@ -12,8 +12,13 @@ class Wallet extends Model
      * @var array
      */
     protected $fillable = [
+        'user_id',
         'amount',
         'profit',
         'commission',
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
 }

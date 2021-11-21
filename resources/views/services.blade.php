@@ -5,110 +5,165 @@
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area" style="background-image:url('{{ asset('main/img/breadcrumb/1.png') }}')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-inner">
-                        <h1 class="page-title">Services</h1>
-                        <ul class="page-list">
-                            <li><a href="{{ url('/') }}">Home</a></li>
-                            <li>Services</li>
-                        </ul>
+    <div class="corzo-page-title-wrap corzo-style-custom corzo-left-align">
+        <div class="corzo-header-transparent-substitute"></div>
+        <div class="corzo-page-title-overlay"></div>
+        <div class="corzo-page-title-container corzo-container">
+            <div class="corzo-page-title-content corzo-item-pdlr">
+                <div class="corzo-page-caption">Our Services</div>
+                <h1 class="corzo-page-title">Investment Services</h1>
+                <div class="corzo-page-caption-divider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gdlr-core-pbf-wrapper" style="padding: 0px 0px 0px 0px;">
+        <div class="gdlr-core-pbf-background-wrap"></div>
+        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
+            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space"></div>
+        </div>
+    </div>
+
+    <div class="gdlr-core-pbf-wrapper" style="padding: 60px 0px 15px 0px;">
+        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f7f7f7;"></div>
+        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
+            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                <div class="gdlr-core-pbf-element">
+                    <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix gdlr-core-style-blog-column-with-frame" style="padding-bottom: 40px;">
+                        <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+
+                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                <div class="gdlr-core-blog-grid gdlr-core-style-2 gdlr-core-js gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background gdlr-core-outer-frame-element" style="box-shadow: rgba(10, 10, 10, 0.07) 0px 15px 35px; height: 654.833px;" data-sync-height="blog-item-1">
+                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                        <a href="">
+                                            <img src="{{ asset('main/services/crypto.jpg') }}" alt=""
+                                                 title="Conference" width="600" height="600"></a>
+                                    </div>
+                                    <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position">
+                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
+                                            style="font-size: 23px; font-weight: 700; letter-spacing: 0px;">
+                                            <a href="">Cryptocurrencies</a>
+                                        </h3>
+                                        <div class="gdlr-core-blog-content clearfix">
+                                            Cryptocurrency is the future and with awesome rates and the best trading team, we help grow your crypto currencies with diversified portfolios across various market
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                <div class="gdlr-core-blog-grid gdlr-core-style-2 gdlr-core-js gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background gdlr-core-outer-frame-element" style="box-shadow: rgba(10, 10, 10, 0.07) 0px 15px 35px; height: 654.833px;" data-sync-height="blog-item-1">
+                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                        <a href="">
+                                            <img src="{{ asset('main/services/forex.jpg') }}" alt=""
+                                                 title="Business" width="600" height="600">
+                                        </a>
+                                    </div>
+                                    <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position">
+                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 23px; font-weight: 700; letter-spacing: 0px;">
+                                            <a href="">Forex</a>
+                                        </h3>
+                                        <div class="gdlr-core-blog-content clearfix">
+                                            Options for investing cash including certificates of deposit and the money market funds. With CDs
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                <div class="gdlr-core-blog-grid gdlr-core-style-2 gdlr-core-js gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background gdlr-core-outer-frame-element" style="box-shadow: rgba(10, 10, 10, 0.07) 0px 15px 35px; height: 654.833px;" data-sync-height="blog-item-1">
+                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                        <a href="">
+                                            <img src="{{ asset('main/services/options-trading.jpg') }}" alt=""
+                                                 title="shutterstock_1067103281" width="600" height="600">
+                                        </a>
+                                    </div>
+                                    <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position">
+                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 23px; font-weight: 700; letter-spacing: 0px;">
+                                            <a href="">Options Trading</a>
+                                        </h3>
+                                        <div class="gdlr-core-blog-content clearfix">
+                                            We offer the best Forex and Options trading services operating closely with an expert team
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                <div class="gdlr-core-blog-grid gdlr-core-style-2 gdlr-core-js gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background gdlr-core-outer-frame-element" style="box-shadow: rgba(10, 10, 10, 0.07) 0px 15px 35px; height: 654.833px;" data-sync-height="blog-item-1">
+                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                        <a href="">
+                                            <img src="{{ asset('main/services/asset.jpg') }}" alt=""
+                                                 title="iStock-956377212" width="600" height="600">
+                                        </a>
+                                    </div>
+                                    <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position">
+                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
+                                            style="font-size: 23px; font-weight: 700; letter-spacing: 0px;">
+                                            <a href="">Asset Management</a>
+                                        </h3>
+                                        <div class="gdlr-core-blog-content clearfix">
+                                            With the best team of Financial and asset managers, you are assured on important projects, construction, contracts, and other assets. We invests pooled funds from clients, putting the capital to work through different investments including stocks, bonds, real estate, master limited partnerships, and more.
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                <div class="gdlr-core-blog-grid gdlr-core-style-2 gdlr-core-js gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background gdlr-core-outer-frame-element" style="box-shadow: rgba(10, 10, 10, 0.07) 0px 15px 35px; height: 654.833px;" data-sync-height="blog-item-1">
+                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                        <a href="">
+                                            <img src="{{ asset('main/services/commodities.jpg') }}" alt=""
+                                                 title="bench-accounting-49025-unsplash" width="600" height="600">
+                                        </a>
+                                    </div>
+                                    <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position">
+                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
+                                            style="font-size: 23px; font-weight: 700; letter-spacing: 0px;">
+                                            <a href="">Commodities</a>
+                                        </h3>
+                                        <div class="gdlr-core-blog-content clearfix">
+                                            A commodity is a basic of good used in commerce that is interchangeable with other commodities or known currencies. We offer the best the market has to offer and always put our customers first in all decisions.
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                <div class="gdlr-core-blog-grid gdlr-core-style-2 gdlr-core-js gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background gdlr-core-outer-frame-element"
+                                     style="box-shadow: rgba(10, 10, 10, 0.07) 0px 15px 35px; height: 654.833px;"
+                                     data-sync-height="blog-item-1">
+                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                        <a href="">
+                                            <img src="{{ asset('main/services/funds-management.jpg') }}"
+                                                 alt="" title="QAdTsSj8TOOWzlyLn3Rg_14248396556_aefcd9a926_o"
+                                                 width="600" height="600">
+                                        </a>
+                                    </div>
+                                    <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position">
+                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
+                                            style="font-size: 23px; font-weight: 700; letter-spacing: 0px;">
+                                            <a href="">Funds Management</a>
+                                        </h3>
+                                        <div class="gdlr-core-blog-content clearfix">
+                                            Our team can be found working in fund management with mutual funds, pension funds, trust funds, and hedge funds. Our managers generally oversee mutual funds or pensions and manage their direction. study trends in the market, analyze economic data, and stay current on company news
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- service-Area Start-->
-    <section class="service-area pd-top-96 pd-bottom-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="section-title section-title-2 text-center">
-                        <h6 class="sub-title">Services</h6>
-                        <h2 class="title">Our Trading Services</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-service-wrap">
-                        <div class="thumb">
-                            <img src="{{ asset('main/img/service/1.png') }}" alt="img">
-                        </div>
-                        <div class="single-service-details">
-                            <h5><a href="">Cryptocurrencies</a></h5>
-                            <p>Cryptocurrency is the future and with awesome rates and the best trading team, we help grow your crypto currencies with diversified portfolios across various market.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-service-wrap">
-                        <div class="thumb">
-                            <img src="{{ asset('main/img/service/2.png') }}" alt="img">
-                        </div>
-                        <div class="single-service-details">
-                            <h5><a href="">Forex</a></h5>
-                            <p>Options for investing cash including certificates of deposit and the money market funds. With CDs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-service-wrap">
-                        <div class="thumb">
-                            <img src="{{ asset('main/img/service/3.png') }}" alt="img">
-                        </div>
-                        <div class="single-service-details">
-                            <h5><a href="">Options Trading</a></h5>
-                            <p>We offer the best Forex and Options trading services operating closely with an expert team.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-service-wrap">
-                        <div class="thumb">
-                            <img src="{{ asset('images/services/asset_management.jpg') }}" alt="img">
-                        </div>
-                        <div class="single-service-details">
-                            <h5><a href="">Asset Management</a></h5>
-                            <p>
-                                With the best team of Financial and asset managers, you are assured on important projects, construction, contracts, and other assets. We invests pooled funds from clients, putting the capital to work through different investments including stocks, bonds, real estate, master limited partnerships, and more.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-service-wrap">
-                        <div class="thumb">
-                            <img src="{{ asset('images/services/commodities.jpg') }}" alt="img">
-                        </div>
-                        <div class="single-service-details">
-                            <h5><a href="">Commodities</a></h5>
-                            <p>A commodity is a basic of good used in commerce that is interchangeable with other commodities or known currencies. We offer the best the market has to offer and always put our customers first in all decisions.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-service-wrap">
-                        <div class="thumb">
-                            <img src="{{ asset('images/services/funds_management.jpg') }}" alt="img">
-                        </div>
-                        <div class="single-service-details">
-                            <h5><a href="">Funds Management</a></h5>
-                            <p>Our team can be found working in fund management with mutual funds, pension funds, trust funds, and hedge funds. Our managers generally oversee mutual funds or pensions and manage their direction. study trends in the market, analyze economic data, and stay current on company news.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- service-Area End-->
 @endsection

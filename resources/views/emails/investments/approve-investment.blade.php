@@ -12,4 +12,4 @@
 </p>
 
 <p align="center">Need more information?<br>
-    Please contact <strong>info@bullsmarkettraders.com</strong>.</p>
+    Please contact <strong>info@cryptogrowthlabs.com</strong>.</p>

@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Bulls Market Traders'),
-    'mail_from' => env('MAIL_FROM_ADDRESS', 'support@wglobalinvestment.com'),
+    'name' => env('APP_NAME', 'Crypto Growth Labs'),
+    'mail_from' => env('MAIL_FROM_ADDRESS', 'support@cryptogrowthlabs.com'),
 
     /*
     |--------------------------------------------------------------------------

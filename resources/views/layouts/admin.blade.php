@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - Bulls Market Traders</title>
+    <title>@yield('title') - Crypto Growth Labs</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('binary_traders_forum_favicon.png') }}" />
     <!-- Bootstrap CSS -->
@@ -200,7 +200,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 text-right">
-                    Copyright {{ date('Y') }} <a href="">Bulls Market Traders</a> All Rights Reserved.
+                    Copyright {{ date('Y') }} <a href="">Crypto Growth Labs</a> All Rights Reserved.
                 </div>
             </div>
         </div>

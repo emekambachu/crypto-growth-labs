@@ -1,38 +1,45 @@
 @extends('layouts.main')
 
 @section('title')
-    Legal
+    About
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area" style="background-image:url('{{ asset('main/img/breadcrumb/1.png') }}')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-inner">
-                        <h1 class="page-title">Legal </h1>
-                        <ul class="page-list">
-                            <li><a href="{{ url('/') }}">Home</a></li>
-                            <li>Legal</li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="corzo-page-title-wrap corzo-style-custom corzo-left-align">
+        <div class="corzo-header-transparent-substitute"></div>
+        <div class="corzo-page-title-overlay"></div>
+        <div class="corzo-page-title-container corzo-container">
+            <div class="corzo-page-title-content corzo-item-pdlr">
+                <div class="corzo-page-caption">Our Terms</div>
+                <h1 class="corzo-page-title">Terms and Conditions</h1>
+                <div class="corzo-page-caption-divider"></div>
             </div>
         </div>
     </div>
 
-    <section class="client-area text-center pd-top-88 pd-bottom-90">
-        <div class="container">
+    <div class="gdlr-core-pbf-wrapper" style="padding: 0px 0px 0px 0px;">
+        <div class="gdlr-core-pbf-background-wrap"></div>
+        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
+            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space"></div>
+        </div>
+    </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-title section-title-2 text-center">
-                        <p>The content provided on this website is for informational purposes only. Bulls Market Traders is not responsible for, and explicitly disclaims, all liability for damages of any kind arising out of the use, reference to or reliance on any information contained within the website.<br>
-                            Although the Bulls Market Traders website may include links with direct access to other internet resources / websites, it is not responsible for the accuracy or content of the information listed on these sites. Links from the Bulls Market Traders website to third party websites do not constitute an endorsement by Bulls Market Traders of those parties or their products and services.</p>
+    <div class="gdlr-core-pbf-wrapper" style="padding: 90px 0px 60px 0px;">
+        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f1f1f1;"></div>
+        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
+            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+
+                <div class="gdlr-core-pbf-element">
+                    <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 50px;">
+                        <div class="gdlr-core-text-box-item-content" style="font-size: 16px;">
+                            <p>The terms and conditions contained herein apply to the investment services of Crypto Growth Labs investment company made available through its official website at www.cryptogrowthlabs.com. All information made available to the investor/client pertaining to this Promotion, including information contained within websites of Crypto Growth Labs, form a legal agreement between the investor/client and Crypto Growth Labs.<br>
+                                By electing to participate in any of the investment businesses of Crypto Growth Labs, you are indicating you agree to be bound by the terms and conditions contained herein and contained within website materials of Crypto Growth Labs, coupled with any Client Agreement(s) executed.<br>
+                                Crypto Growth Labs reserves the right to amend these terms and conditions at any time. Such modifications shall become effective immediately at the time the amendment is executed and posted on the Crypto Growth Labs website. Crypto Growth Labs is not required to make announcements as to such amendments.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </section>
+    </div>
 @endsection

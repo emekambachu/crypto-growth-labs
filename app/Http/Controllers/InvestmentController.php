@@ -107,9 +107,9 @@ class InvestmentController extends Controller
 
         // Send Email to registered User
         Mail::send('emails.investments.add-new-investment', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('support@wglobalinvestment.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Your investment has been submitted');
         });
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\UserReferral;
+use App\UserWalletAddress;
 use App\Wallet;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\File;
@@ -55,6 +57,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'referer' => ['nullable'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
             'mobile' => ['nullable', 'min:10', 'regex:/^([0-9\s\-\+\(\)]*)$/'],
             'image'  => ['nullable', 'image', 'mimes:jpg,jpeg,png', 'max:5048'],
@@ -62,8 +65,8 @@ class RegisterController extends Controller
             'country' => ['required', 'string'],
             'state' => ['nullable', 'string'],
             'address' => ['nullable', 'string', 'max:100'],
-            'bitcoin_wallet' => ['nullable', 'min:5'],
-            'ethereum_wallet' => ['nullable', 'min:5'],
+            'wallet_address.*.name' => ['nullable'],
+            'wallet_address.*.address' => ['nullable'],
         ]);
     }
 
@@ -114,44 +117,77 @@ class RegisterController extends Controller
             $data['valid_id'] = NULL;
         }
 
-        // Create Company Info
-        $wallet = Wallet::create([
-            'amount' => 0,
-            'profit' => 0,
-            'commission' => 0,
-        ]);
+        //Generate Ref for user slug
+        function ref($length = 8){
+            $characters = '0123456789';
+            $charactersLength = strlen($characters);
+            $randomString = 'CGL';
+            for ($i = 0; $i < $length; $i++) {
+                $randomString .= $characters[random_int(0, $charactersLength - 1)];
+            }
+            return $randomString;
+        }
 
         // Create User
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'referral_number' => ref(),
             'password' => Hash::make($data['password']),
             'password_backup' => $data['password'],
             'image' => $data['image'],
             'valid_id' => $data['valid_id'],
-            'wallet_id' => $wallet->id,
             'mobile' => $data['mobile'],
             'country' => $data['country'],
             'state' => $data['state'],
             'address' => $data['address'],
-            'bitcoin_wallet' => $data['bitcoin_wallet'],
-            'ethereum_wallet' => $data['ethereum_wallet'],
         ]);
 
-        $data['password_backup'] = $data['password'];
+        // Submit multiple crypto wallet addresses using for loop
+        if(!empty($data['wallet_address'])){
+            for($i = 0, $count = count($data['wallet_address']); $i < $count; $i++){
+                if(!empty($data['wallet_address'][$i]['name'])){
+                    $data = [
+                        'user_id' => $user->id,
+                        'name' => $data['wallet_address'][$i]['name'],
+                        'address' => $data['wallet_address'][$i]['address'],
+                    ];
+                    UserWalletAddress::create($data);
+                }
+            }
+        }
+
+        // Create Company Info
+        Wallet::create([
+            'user_id' => $user->id
+        ]);
+
+        // Check if referer number exists and include it
+        if(!empty($data['referer'])){
+            $refererExists = User::where('referral_number', $data['referer'])->first();
+            if($refererExists){
+                UserReferral::create([
+                   'user_id' => $refererExists->id,
+                   'referee_id' => $user->id,
+                   'referee_number' => $user->referral_number,
+                ]);
+            }
+        }
 
         // Send Email to registered User
         Mail::send('emails.users.registration-complete', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->to($data['email'], $data['name']);
-            $message->replyTo('support@wglobalinvestment.com', 'Bulls Market Traders');
+            $message->replyTo('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Registration Complete');
         });
 
         // Send Email to Admin
+        // send raw password to admin
+        $data['password_backup'] = $data['password'];
         Mail::send('emails.users.new-user', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to('support@wglobalinvestment.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to('support@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('New User');
         });
 

@@ -80,9 +80,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.users.verify-user', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject($data['status'] === 'activated' ? 'Your Account has been activated' : 'Your Account has been deactivated');
         });
 
@@ -156,9 +156,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.fund-wallet', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Credit Transfer of $' . number_format($data['amount']) . ' From Investment');
         });
 
@@ -201,9 +201,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.add-profit', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Credit Transfer of $' . number_format($data['amount']) . ' on profit');
         });
 
@@ -249,9 +249,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.add-commission', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Credit Transfer of $' . number_format($data['amount']) . ' on commission');
         });
 
@@ -297,9 +297,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.add-bonus', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject('Credit Transfer of $' . number_format($data['amount']) . ' on bonus');
         });
 
@@ -351,9 +351,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.investments.approve-investment', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject($data['status']);
         });
 
@@ -446,9 +446,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.approve-withdrawal', $data, static function ($message) use ($data) {
-            $message->from('info@bullsmarkettraders.com', 'Bulls Market Traders');
-            $message->to($data['email'], $data['name'])->cc('support@wglobalinvestment.com');
-            $message->replyTo('info@bullsmarkettraders.com', 'Bulls Market Traders');
+            $message->from('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
+            $message->to($data['email'], $data['name'])->cc('support@cryptogrowthlabs.com');
+            $message->replyTo('info@cryptogrowthlabs.com', 'Crypto Growth Labs');
             $message->subject($data['status']);
         });
 

@@ -695,7 +695,8 @@ Home
                                                         <img src="{{ asset('main/services/commodities.jpg') }}"
                                                              alt="" width="700" height="870" title="column top5" />
                                                     </div>
-                                                    <div class="gdlr-core-feature-box-overlay" style="background: #000000; opacity: 0.01;"></div>
+                                                    <div class="gdlr-core-feature-box-overlay"
+                                                         style="background: #000000; opacity: 0.01;"></div>
                                                     <div class="gdlr-core-feature-content-box gdlr-core-with-background" style="padding-right: 50px; padding-bottom: 40px; padding-left: 55px;">
                                                         <div class="gdlr-core-feature-content-caption gdlr-core-skin-info" style="color: #a5a5a5; font-size: 13px; font-weight: 500; letter-spacing: 0px; text-transform: none;">
                                                             05
@@ -721,14 +722,14 @@ Home
                                                              alt="" width="700" height="870" title="column top6" />
                                                     </div>
                                                     <div class="gdlr-core-feature-box-overlay" style="background: #000000; opacity: 0.01;"></div>
-                                                    <div class="gdlr-core-feature-content-box gdlr-core-with-background" style="padding-right: 50px; padding-bottom: 40px; padding-left: 55px;">
+                                                    <div class="gdlr-core-feature-content-box gdlr-core-with-background"
+                                                         style="padding-right: 50px; padding-bottom: 40px; padding-left: 55px;">
                                                         <div class="gdlr-core-feature-content-caption gdlr-core-skin-info" style="color: #a5a5a5; font-size: 13px; font-weight: 500; letter-spacing: 0px; text-transform: none;">
                                                             06
                                                         </div>
                                                         <div
                                                             class="gdlr-core-feature-content-title gdlr-core-title-font gdlr-core-skin-title"
-                                                            style="font-size: 29px; font-weight: 600; letter-spacing: 0px; text-transform: none;"
-                                                        >
+                                                            style="font-size: 29px; font-weight: 600; letter-spacing: 0px; text-transform: none;">
                                                             Funds Management
                                                         </div>
                                                         <div class="gdlr-core-feature-content-wrap">
@@ -744,6 +745,7 @@ Home
                                 </div>
                             </div>
                         </div>
+
                         <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first gdlr-core-hide-in-mobile" id="gdlr-core-column-58090">
                             <div class="gdlr-core-pbf-column-content-margin gdlr-core-js gdlr-core-column-extend-left" style="margin: 100px 0px 0px 0px; padding-top: 0px; padding-bottom: 0px;" data-sync-height="height-learning">
                                 <div class="gdlr-core-pbf-background-wrap">

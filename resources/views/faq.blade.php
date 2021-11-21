@@ -37,14 +37,14 @@
                             <div class="panel-heading" role="tab" id="accordion-i1">
                                 <h6 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#another" href="#accordion-pane-i1" aria-expanded="false" class="collapsed">
-                                        What does Bulls Market Traders do?
+                                        What does Crypto Growth Labs do?
                                         <span class="plus-minus"><span></span></span>
                                     </a>
                                 </h6>
                             </div>
                             <div id="accordion-pane-i1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-i1" aria-expanded="false" style="height: 0px;">
                                 <div class="panel-body">
-                                    <p>Bulls Market Traders is one of the leaders at international cryptocurrency investment market, it is engaged in cryptocurrency trade for profit.</p>
+                                    <p>Crypto Growth Labs is one of the leaders at international cryptocurrency investment market, it is engaged in cryptocurrency trade for profit.</p>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                             <div class="panel-heading" role="tab" id="accordion-i2">
                                 <h6 class="panel-title">
                                     <a class="" role="button" data-toggle="collapse" data-parent="#another" href="#accordion-pane-i2" aria-expanded="true">
-                                        How safe are the investments offered by Bulls Market Traders?
+                                        How safe are the investments offered by Crypto Growth Labs?
                                         <span class="plus-minus"><span></span></span>
                                     </a>
                                 </h6>

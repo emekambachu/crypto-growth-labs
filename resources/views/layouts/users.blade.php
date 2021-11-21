@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-    <title>@yield('title') | Bulls Market Traders </title>
+    <title>@yield('title') | Crypto Growth Labs </title>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('bullsmarket_logoonly.png') }}"/>
     <link href="{{ asset('users/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />

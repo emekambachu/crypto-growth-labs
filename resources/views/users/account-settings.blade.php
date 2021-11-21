@@ -96,7 +96,7 @@
         <div class="footer-wrapper">
             <div class="footer-section f-section-1">
                 <p class="center-block">Copyright © {{ date('Y') }}
-                    <a target="_blank" href="{{ url('/') }}">Bulls Market Traders</a>, All rights reserved.</p>
+                    <a target="_blank" href="{{ url('/') }}">Crypto Growth Labs</a>, All rights reserved.</p>
             </div>
         </div>
 
