@@ -9,7 +9,8 @@ class UserWalletAddress extends Model
     protected $fillable = [
         'user_id',
         'name',
-        'address'
+        'address',
+        'barcode'
     ];
 
     public function user(){

@@ -16,8 +16,8 @@ class RedirectIfAuthenticated
      * @param  string|null  $guard
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)
-    {
+    public function handle($request, Closure $next, $guard = null){
+
         if ($guard === "admin" && Auth::guard($guard)->check()) {
             return redirect()->route('admin-dashboard');
         }
@@ -25,5 +25,6 @@ class RedirectIfAuthenticated
             return redirect()->route('users-dashboard');
         }
         return $next($request);
+
     }
 }

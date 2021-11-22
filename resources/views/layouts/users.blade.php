@@ -8,9 +8,10 @@
 
     <title>@yield('title') | Crypto Growth Labs </title>
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('bullsmarket_logoonly.png') }}"/>
+    <link rel="icon" type="image/x-icon" href="{{ asset('crypto-growth-labs-logoonly.png') }}"/>
     <link href="{{ asset('users/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
     <script src="{{ asset('users/assets/js/loader.js') }}"></script>
+
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
     <link href="{{ asset('users/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -45,7 +46,7 @@
 
         <div class="nav-logo align-self-center">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img alt="logo" src="{{ asset('bullsmarket_logoonly.png') }}" width="300">
+                <img alt="logo" src="{{ asset('crypto-growth-labs-logoonly.png') }}" width="300">
                 <span class="navbar-brand-name"></span></a>
         </div>
 
@@ -106,9 +107,9 @@
             <li class="nav-item dropdown user-profile-dropdown order-lg-0 order-1">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="user-profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
-                        <img src="/photos/{{!empty($user->image) ? $user->image : 'noimage.png'}}" class="img-fluid">
+                        <img src="/photos/{{!empty(Auth::user()->image) ? Auth::user()->image : 'noimage.png'}}" class="img-fluid">
                         <div class="media-body align-self-center">
-                            <h6><span>Hi,</span> {{ $user->name }}</h6>
+                            <h6 class="text-white"><span>Hi,</span> {{ Auth::user()->name }}</h6>
                         </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -123,14 +124,6 @@
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle></svg> Account Settings</a>
                         </div>
-
-{{--                        <div class="dropdown-item">--}}
-{{--                            <a class="" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg> Inbox</a>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="dropdown-item">--}}
-{{--                            <a class="" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Lock Screen</a>--}}
-{{--                        </div>--}}
 
                         <div class="dropdown-item">
                             <a class="" href="{{ route('users-logout') }}">
@@ -234,13 +227,21 @@
                 </li>
 
                 <li class="menu single-menu">
-                    <a href="{{ url('users/account-settings') }}" aria-expanded="false" class="dropdown-toggle">
+                    <a href="" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
                             <span>Account Settings</span>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
+                    <ul class="collapse submenu list-unstyled" id="app" data-parent="#topAccordion">
+                        <li>
+                            <a href="{{ url('users/account-settings') }}"> Profile settings </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('settings.wallets') }}"> Crypto Wallets </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="menu single-menu">

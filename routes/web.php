@@ -78,27 +78,44 @@ Route::get('users/dashboard', 'UserController@index')->name('users-dashboard');
 Route::resource('users/investments', 'InvestmentController');
 Route::post('users/submit-investments', 'InvestmentController@submitInvestment');
 
-Route::get('users/account-settings', 'UserController@accountSettings');
-Route::post('users/update-account', 'UserController@updateAccount');
-
 // Withdrawal
 Route::get('user/withdraw/balance', [UserController::class, 'withdrawBalance'])
     ->name('user.withdraw-balance');
 Route::post('user/withdraw/balance/submit', [UserController::class, 'withdrawBalanceSubmit'])
     ->name('user.withdraw-balance.submit');
 
+// User account settings
+Route::get('users/account-settings', 'UserController@accountSettings')
+    ->name('settings.account');
+Route::post('users/update-account', 'UserController@updateAccount')
+    ->name('settings.update-account');
+
+Route::post('users/settings/crypto-wallet/add', [UserController::class, 'addCryptoWallet'])
+    ->name('settings.wallet.add');
+Route::get('users/settings/crypto-wallets', [UserController::class, 'cryptoWallets'])
+    ->name('settings.wallets');
+Route::get('users/settings/crypto-wallet/{id}/edit', [UserController::class, 'editCryptoWallet'])
+    ->name('settings.wallets.edit');
+Route::put('users/settings/crypto-wallet/{id}/update', [UserController::class, 'updateCryptoWallet'])
+    ->name('settings.wallets.update');
+Route::delete('users/settings/crypto-wallet/{id}/delete', [UserController::class, 'deleteCryptoWallet'])
+    ->name('settings.wallets.delete');
+
 // Admin Section
 // Login Page
-Route::get('admin-login', 'Auth\AdminLoginController@showLoginForm')->name('admin-login');
+Route::get('admin-login', 'Auth\AdminLoginController@showLoginForm')
+    ->name('admin-login');
 
 // Submit Login
 Route::post('admin-login', ['as'=>'admin-login','uses'=>'Auth\AdminLoginController@login']);
 
 // Perform Admin logout
-Route::get('admin-logout', 'Auth\AdminLoginController@logout')->name('admin-logout');
+Route::get('admin-logout', 'Auth\AdminLoginController@logout')
+    ->name('admin-logout');
 
 //Admin Dashboard Page
-Route::get('admin/dashboard', 'AdminController@index')->name('admin-dashboard');
+Route::get('admin/dashboard', 'AdminController@index')
+    ->name('admin-dashboard');
 
 //Admin Manage Users Page
 Route::get('admin/manage-users', 'AdminController@manageUsers')->name('manage-users');
@@ -116,7 +133,8 @@ Route::post('admin/delete-users/{id}', ['uses' => 'AdminController@deleteUser'])
 Route::get('admin/fund-wallet/{id}',
     ['as'=>'admin.fund-wallet', 'uses'=>'AdminController@fundWalletPage']
 );
-Route::post('admin/fund-wallet/{id}', ['uses' => 'AdminController@fundWallet'])->name('admin.wallet.fund');
+Route::post('admin/fund-wallet/{id}', ['uses' => 'AdminController@fundWallet'])
+    ->name('admin.wallet.fund');
 
 //Add User Profit
 Route::get('admin/user/profit/{id}',
@@ -137,7 +155,8 @@ Route::get('admin/user/bonus/{id}',
 Route::post('admin/user/bonus/{id}', ['as'=>'admin.bonus.store', 'uses' => 'AdminController@addBonus']);
 
 //Admin Manage Investments
-Route::get('admin/manage-investments', 'AdminController@manageInvestments')->name('manage-investments');
+Route::get('admin/manage-investments', 'AdminController@manageInvestments')
+    ->name('manage-investments');
 
 // Admin Approve Investment
 Route::post('admin/approve-investments/{id}', ['uses' => 'AdminController@approveInvestment']);

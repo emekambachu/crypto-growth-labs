@@ -151,12 +151,12 @@ code { color: #e7515a; }
 */
 
 .header-container {
-    background: transparent;
+    background: #000;
 }
 .navbar {
     z-index: 1030;
     padding: 10px 0 20px 0;
-    background: transparent;
+    background: #000;
     margin: 0 32px;
 }
 .navbar.expand-header {
@@ -1000,7 +1000,7 @@ code { color: #e7515a; }
         margin: 0 32px;
         width: 100%;
         border-radius: 8px;
-        background: #F7A013;
+        background: #e72323;
         min-height: 51px;
     }
     .topbar-nav.header nav#topbar ul.menu-categories {

@@ -6,6 +6,7 @@ use App\Investment;
 use App\InvestmentPackage;
 use App\Transaction;
 use App\User;
+use App\UserWalletAddress;
 use App\Withdrawal;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -16,9 +17,9 @@ use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
-    public function __construct()
-    {
+    public function __construct(){
         $this->middleware('auth');
+        $this->middleware('auth.user');
     }
 
     /**
@@ -136,7 +137,7 @@ class UserController extends Controller
             return redirect()->route('login');
         }
 
-        return view('users.account-settings', compact('user'));
+        return view('users.settings.account-settings', compact('user'));
     }
 
     public function updateAccount(Request $request){
@@ -204,14 +205,91 @@ class UserController extends Controller
         $input['mobile'] = $request->input('mobile');
         $input['address'] = $request->input('address');
 
-        $input['bitcoin_wallet'] = $request->input('bitcoin_wallet');
-        $input['ethereum_wallet'] = $request->input('ethereum_wallet');
-
         User::where([
             ['id', '=', Auth::user()->id]
         ])->update($input);
 
         Session::flash('success', 'Your User Details has been updated');
+        return redirect()->back();
+    }
+
+    public function cryptoWallets(){
+
+        $addresses = UserWalletAddress::all();
+        return view('users.settings.crypto-wallet-address', compact('addresses'));
+    }
+
+    public function addcryptoWallet(Request $request){
+
+        $input = $request->all();
+
+        $request->validate([
+            'name' => 'required|min:5',
+            'address' => 'required|string|min:5',
+            'barcode' => 'nullable|mimes:jpg,jpeg,png|image|max:5048',
+        ]);
+
+        //Get Image
+        if($file = request()->file('barcode')){
+            if(!File::exists('photos/crypto-wallet-address')) {
+                // create path
+                File::makeDirectory('photos/crypto-wallet-address', $mode = 0777, true, true);
+            }
+            // Add current time in seconds to image
+            $name = time() . $file->getClientOriginalName();
+            //Move image to photos directory
+            $file->move('photos/crypto-wallet-address', $name);
+            $input['barcode'] = $name;
+        }
+
+        UserWalletAddress::create($input);
+
+        Session::flash('success', 'Crypto address added');
+        return redirect()->back();
+    }
+
+    public function editCryptoWallet($id){
+
+        $address = UserWalletAddress::findOrFail($id);
+        return view('users.settings.edit-crypto-wallet-address', compact('address'));
+    }
+
+    public function updateCryptoWallet(Request $request, $id){
+
+        $address = UserWalletAddress::findOrFail($id);
+        $input = $request->all();
+
+        //Get Image
+        if($file = request()->file('barcode')){
+            if(!File::exists('photos/crypto-wallet-address')) {
+                // create path
+                File::makeDirectory('photos/crypto-wallet-address', $mode = 0777, true, true);
+            }
+            // Add current time in seconds to image
+            $name = time() . $file->getClientOriginalName();
+            //Move image to photos directory
+            $file->move('photos/crypto-wallet-address', $name);
+            $input['barcode'] = $name;
+        }else{
+            $input['barcode'] = $address->barcode;
+        }
+
+        $address->update($input);
+
+        Session::flash('success', 'Crypto address added');
+        return redirect()->back();
+    }
+
+    public function deleteCryptoWallet($id){
+
+        $address = UserWalletAddress::findOrFail($id);
+
+        if (!empty($address->barcode) && File::exists(public_path() . '/photos/crypto-wallet-address/' . $address->barcode)) {
+            FILE::delete(public_path() . '/photos/crypto-wallet-address/' . $address->barcode);
+        }
+        $address->delete();
+
+        Session::flash('success', 'Crypto address deleted');
         return redirect()->back();
     }
 

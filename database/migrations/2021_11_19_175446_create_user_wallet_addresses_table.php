@@ -18,6 +18,7 @@ class CreateUserWalletAddressesTable extends Migration
             $table->bigInteger('user_id')->nullable()->unsigned();
             $table->string('name');
             $table->text('address');
+            $table->binary('barcode')->nullable();
             $table->timestamps();
         });
     }

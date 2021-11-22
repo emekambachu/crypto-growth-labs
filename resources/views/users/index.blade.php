@@ -66,8 +66,6 @@
         .miningInfo{
             font-size: 16px;
         }
-
-
     </style>
 @endsection
 
@@ -83,31 +81,13 @@
 
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
 
-                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,1027,825,1839,2010,74,52" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
+                <script type="text/javascript"
+                        src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script>
+                <div id="coinmarketcap-widget-coin-price-block"
+                     coins="1,1027,825,1839,2010,74,52" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
 
             </div>
 
-{{--            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">--}}
-
-{{--                <!-- TradingView Widget BEGIN -->--}}
-{{--                <div class="tradingview-widget-container">--}}
-{{--                    <div class="tradingview-widget-container__widget"></div>--}}
-{{--                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>--}}
-{{--                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>--}}
-{{--                        {--}}
-{{--                            "width": "100%",--}}
-{{--                            "height": 500,--}}
-{{--                            "defaultColumn": "overview",--}}
-{{--                            "screener_type": "crypto_mkt",--}}
-{{--                            "displayCurrency": "BTC",--}}
-{{--                            "colorTheme": "dark",--}}
-{{--                            "locale": "en"--}}
-{{--                        }--}}
-{{--                    </script>--}}
-{{--                </div>--}}
-{{--                <!-- TradingView Widget END -->--}}
-
-{{--            </div>--}}
 
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
                 <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>

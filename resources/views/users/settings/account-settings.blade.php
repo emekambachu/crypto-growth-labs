@@ -4,13 +4,16 @@
     Account Settings
 @endsection
 
+@section('top-assets')
+    <script src="{{ asset('js/countries.js') }}" type="text/javascript"></script>
+@endsection
+
 @section('contents')
     <div class="layout-px-spacing">
         <div class="page-header">
             <div class="page-title">
                 <h3 class="text-dark">Account Settings</h3>
             </div>
-
         </div>
 
         <div class="row layout-top-spacing">
@@ -19,11 +22,7 @@
                 <div class="statbox widget box box-shadow">
                     <div class="widget-header">
                         <div class="row">
-                            <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                <h4>Withdraw Amount</h4>
-                            </div>
-                            <p>Payment will be made to your Bitcoin Wallet Address</p>
-                            @include('includes.alerts')
+                            @include('includes.admin-alerts')
                         </div>
                     </div>
                     <div class="widget-content widget-content-area">
@@ -69,18 +68,6 @@
                                         populateCountries("country2");
                                     </script>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault01">Bitcoin Wallet Address</label>
-                                    <input name="bitcoin_wallet" type="text" class="form-control" value="{{ $user->bitcoin_wallet }}"
-                                           id="validationDefault01">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault01">Ethereum Wallet Address</label>
-                                    <input name="ethereum_wallet" type="text" class="form-control" value="{{ $user->ethereum_wallet }}"
-                                           id="validationDefault01">
-                                </div>
-
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-info" type="submit">Update</button>
