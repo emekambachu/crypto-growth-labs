@@ -43,12 +43,12 @@
                                             <ul></ul>
                                         </div>
                                         @include('includes.alerts')
-                                        <form method="POST" action="{{ route('login') }}" enctype="multipart/form-data">
-                                            @csrf
-                                            <input type="email" name="email" id="Email"
-                                                   placeholder="Email:"
-                                                   class="input @error('email') is-invalid @enderror">
-                                            @error('email')
+                                    <form method="POST" action="{{ route('admin-login') }}" enctype="multipart/form-data">
+                                        @csrf
+                                            <input type="text" name="username" id="Email"
+                                                   placeholder="Username:"
+                                                   class="input @error('username') is-invalid @enderror">
+                                            @error('username')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
